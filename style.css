@@ -30,7 +30,7 @@ main {
         [margen-intermedio-start] 2.5vh
         [aside-start] 1fr
         [margen-inferior-start] 2.5vh
-        [footer-start] 8%;
+        [footer-start] 5%;
 }
 
 header {
@@ -148,7 +148,7 @@ aside {
 
 
 footer {
-    padding: 2.5vh;
+    padding: 1.5vh;
     border-radius: 1%;
     background-color: #c6a700;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -179,4 +179,5 @@ p {
     color: #3E3E3E;
     font-family: 'Roboto', sans-serif;
     font-size: 1em;
+    text-align: justify;
 }
