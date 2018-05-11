@@ -57,7 +57,7 @@ header {
 
         color: #f2f2f2;
         font-family: 'Expletus Sans', cursive;
-        font-size: 3em;
+        font-size: 6vh;
         font-weight: bold;
         text-align: left;
         text-transform: uppercase;
@@ -72,7 +72,7 @@ header {
 
         color: #f2f2f2;
         font-family: 'Expletus Sans', cursive;
-        font-size: 1.5em;
+        font-size: 2.5vh;
         text-align: right;
     }
 
@@ -98,7 +98,7 @@ nav {
         color: #f2f2f2;
         font-family: 'Roboto', sans-serif;
         font-weight: medium;
-        font-size: 2em;
+        font-size: 4vh;
         text-align: center;
         text-decoration: none;
         transition: font linear 0.1s 0s;
@@ -107,16 +107,17 @@ nav {
 
     nav > a.navbar:hover {
         background-color: #004f04;
-        font-size: 2.25em;
+        font-size: 4.5vh;
     }
 
     nav > a.navbar:active {
         background-color: #fdd835;
         color: #000000;
-        font-size: 2.25em;
+        font-size: 4.5vh;
     }
 
 article {
+    padding: 2.5vh;
     border-radius: 0.250vh;
     background-color: #ffffff;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -126,6 +127,7 @@ article {
 }
 
 div.login {
+    padding: 2.5vh;
     border-radius: 0.250vh;
     background-color: #ffffff;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -135,6 +137,7 @@ div.login {
 }
 
 aside {
+    padding: 2.5vh;
     border-radius: 1%;
     background-color: #ffffff;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -145,10 +148,35 @@ aside {
 
 
 footer {
+    padding: 2.5vh;
     border-radius: 1%;
     background-color: #c6a700;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     /* indica cuántas columnas ocupa el elemento */
     grid-column: margen-izquierdo-start / span 5;
     grid-row: footer-start
+}
+
+h3 {
+    margin: 2.5vh 0;
+    color: #000000;
+    font-family: 'Expletus Sans', cursive;
+    font-size: 3vh;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+h4 {
+    margin: 2vh 0;
+    color: #000000;
+    font-family: 'Expletus Sans', cursive;
+    font-size: 2.5vh;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+p {
+    color: #3E3E3E;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
 }
