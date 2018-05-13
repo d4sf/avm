@@ -106,7 +106,7 @@ nav {
     }
 
     nav > a.navbar:hover {
-        background-color: #004f04;
+        background-color: #60ac5d;
         font-size: 4.5vh;
     }
 
@@ -122,19 +122,64 @@ article {
     background-color: #ffffff;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     /* indica cuántas columnas ocupa el elemento */
-    grid-column: login-start / margen-derecho-start;
+    grid-column: aside-start / margen-derecho-start;
     grid-row: contenido-start / margen-intermedio-start
 }
 
 div.login {
-    padding: 2.5vh;
+    /* padding: 2.5vh; */
     border-radius: 0.250vh;
     background-color: #ffffff;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     /* indica cuántas columnas ocupa el elemento */
     grid-column: login-start / margen-central-start;
-    grid-row: aside-start / margen-inferior-start
+    grid-row: contenido-start / margen-inferior-start
 }
+
+    div.login-wrapper {
+        height: 100%;
+        width: 100%;
+    }
+
+    div.login-wrapper > div.titulo-login {
+        background-color: #fdd835;
+        height: 6vh;
+        padding: 1vh;
+        margin-bottom: 2.5vh;
+        color: #0d0d0d;
+        font-family: 'Expletus Sans', cursive;
+        font-size: 3.5vh;
+        text-transform: capitalize;
+    }
+
+    div.cedula-wrapper, div.password-wrapper {
+        margin: 2.5vh 2.5vh;
+    }
+
+    div > label.login-label {
+        display: inline-block;
+        width: 15vh;
+        font: normal normal 2.5vh/2.5vh 'Roboto', sans-serif;
+    }
+
+    input[type="text"], input[type="password"] {
+        width: 25%;
+        border: none;
+        border-bottom: 1px solid #c6a700;
+        text-indent: 1vh;
+        font-stretch: ultra-expanded;
+        color: #4d4d4d;
+        font: normal lighter 2vh/2.5vh 'Roboto', sans-serif;
+        -moz-transition: width linear 0.1s 0s;
+        -webkit-trtransition: width linear 0.1s 0s;
+        -o-transition: width linear 0.1s 0s;
+        transition: width linear 0.1s 0s;
+    }
+
+    input[type="text"]:focus, input[type="password"]:focus {
+        width: 50%;
+        border-bottom: 2px solid #fdd835;
+    }
 
 aside {
     padding: 2.5vh;
@@ -150,7 +195,7 @@ aside {
 footer {
     padding: 1.5vh;
     border-radius: 1%;
-    background-color: #c6a700;
+    background-color: #ffff6b;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     /* indica cuántas columnas ocupa el elemento */
     grid-column: margen-izquierdo-start / span 5;
@@ -176,8 +221,8 @@ h4 {
 }
 
 p {
-    color: #3E3E3E;
+    color: #4d4d4d;
     font-family: 'Roboto', sans-serif;
-    font-size: 1em;
+    font-size: 2vh;
     text-align: justify;
 }
