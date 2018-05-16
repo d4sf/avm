@@ -133,7 +133,7 @@ div.login {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     /* indica cuántas columnas ocupa el elemento */
     grid-column: login-start / margen-central-start;
-    grid-row: contenido-start / margen-inferior-start
+    grid-row: contenido-start / margen-intermedio-start;
 }
 
     div.login-wrapper {
@@ -152,11 +152,11 @@ div.login {
         text-transform: capitalize;
     }
 
-    div.cedula-wrapper, div.password-wrapper {
+    div.cedula-wrapper, div.password-wrapper, div.nombre-wrapper, div.apellido-wrapper {
         margin: 2.5vh 2.5vh;
     }
 
-    div > label.login-label {
+    div > label.label {
         display: inline-block;
         width: 15vh;
         font: normal normal 2.5vh/2.5vh 'Roboto', sans-serif;
@@ -180,6 +180,34 @@ div.login {
         width: 50%;
         border-bottom: 2px solid #fdd835;
     }
+/* arreglar esto con flex */
+    input[id="log-submit"] {
+        margin: 5vh 0 5vh 5vh;
+        height: 4vh;
+        width: 80%;
+        background-color: #ffff6b;
+        color: #000000;
+        font: normal lighter 2vh/2.5vh 'Roboto', sans-serif;
+        border: none;
+        border-radius: 1%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    input[id="reg-submit"], input[id="reg-reset"] {
+        margin: 1vh 1vh;
+        height: 4vh;
+        width: 40%;
+        background-color: #ffff6b;
+        color: #000000;
+        font: normal lighter 2vh/2.5vh 'Roboto', sans-serif;
+        border: none;
+        border-radius: 1%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    input[type="submit"]:hover, input[type="reset"]:hover {
+        background-color: #fdd835;
+    }
 
 aside {
     padding: 2.5vh;
@@ -187,7 +215,7 @@ aside {
     background-color: #ffffff;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     /* indica cuántas columnas ocupa el elemento */
-    grid-column: aside-start / margen-derecho-start;
+    grid-column: login-start / margen-derecho-start;
     grid-row: aside-start / margen-inferior-start
 }
 

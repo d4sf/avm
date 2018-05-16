@@ -32,9 +32,31 @@
         </nav>
         <!-- contenido "principal" -->
         <article>
-            <h3>título 3</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec fermentum massa. Maecenas euismod eu nisl sit amet faucibus. Donec ac tincidunt enim. Suspendisse nec ultricies orci. Maecenas et libero nec nisi venenatis molestie ut non erat. Praesent blandit varius nisi, at posuere diam vehicula id. Duis consectetur massa id mollis venenatis. Maecenas mollis mi vitae orci egestas feugiat. Nullam congue lorem ac lacus rutrum tempor. Sed et luctus massa. Proin elit nunc, lobortis in interdum non, dictum eget velit. 
-                Aenean faucibus venenatis ipsum vitae blandit. Pellentesque eros quam, mattis laoreet ullamcorper varius, semper quis nisl. Aliquam nibh nunc, vulputate vitae ullamcorper non, aliquam a metus. Phasellus vel lectus a tellus eleifend maximus sit amet suscipit felis. Etiam condimentum metus et neque elementum egestas. Vivamus lacus ex, vestibulum in vulputate a, finibus non tellus. Nunc finibus euismod tempus. Nam tempus tincidunt metus quis ultrices. Donec et erat iaculis, varius enim eget, volutpat orci. </p>
+            <h3>Registro</h3>
+                <form action="#" method="post" name="registro">
+                    <div class="nombre-wrapper">
+                        <label for="nombre" class="label">Nombre:</label>
+                        <input type="text" name="nombre" id="reg-nombre">
+                    </div>
+                    <div class="apellido-wrapper">
+                        <label for="apellido" class="label">Apellido:</label>
+                        <input type="text" name="apellido" id="reg-apellido">
+                    </div>
+                    <div class="cedula-wrapper">
+                        <label for="cedula" class="label">Cedula:</label>
+                        <input type="text" name="cedula" id="reg-cedula">
+                    </div>
+                    <div class="password-wrapper">
+                        <label for="password" class="label">Contraseña:</label>
+                        <input type="password" name="password" id="reg-password">
+                    </div>
+                    <div class="submit-wrapper">
+                        <input type="submit" value="Registrarse" id="reg-submit" onclick="verificarRegistrar()">
+                    </div>
+                    <div class="reset-wrapper">
+                        <input type="reset" value="Limpiar" id="reg-reset">
+                    </div>
+                </form>
         </article>
         <!-- contenido "secundario" -->
         <aside>
@@ -57,7 +79,7 @@
                             <input type="password" name="password" id="logPassword" maxlength="8">
                         </div>
                         <div class="submit-wrapper">
-                            <input type="submit" value="Ingresar" id="log-submit" onclick="verificarLogin()">
+                            <input type="submit" value="Ingresar" id="log-submit"onclick="verificarLogin()">
                         </div>
                     </form>
                 </div>
