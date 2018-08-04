@@ -12,89 +12,157 @@
     <title>AVM - Modesto Silva</title>
 </head>
 <body>
-    <nav class="z-depth-3">
-        <div class="nav-wrapper green darken-1" >
-            <a href="#" class="brand-logo">AVM</a>
-            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li class="active"><a href="#">Inicio</a></li>
-                <li><a href="#">Acerca de</a></li>
-                <li><a href="#">Registro</a></li>
-            </ul>
-        </div>
-    </nav>
+<!-- navbar -->
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper green darken-1">
+                <a href="#" class="brand-logo" title="Aula Virtual Modsilvina">AVM</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li class="active"><a href="index.html" title="Inicio">Inicio</a></li>
+                    <li><a href="#" title="Acerca de">Acerca de</a></li>
+                    <li><a href="documentacion.html" title="Documentación">Documentación</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+<!-- contenido / main -->
+    <main class="container">
+        <!-- características -->
+        <div class="row">
+            <div class="col s12 m6 l3 center-align">
+                <i class="large material-icons yellow-text text-darken-2">flash_on</i>
+                <h5 class="center-align green-text text-darken-2">Rápido</h5>
+                <p class="center-align">AVM es una plataforma rápida, tan solo inicia sesión para ingresar a tu escritorio, dónde tendrás a mano todas las herramientas necesarias para el aprendizaje: contenidos, quizzes, vídeos, notas y un calendario para revisar las actividades importantes.</p>
+            </div>
 
-    <!-- contenedor principal del layout -->
-    <main>
-        <div class="container">
-            <!-- fila del artículo -->
-            <div class="row" name="articulo">
-                <!-- columna -->
-                <div class="col s12">
-                        <h5 class="green-text text-darken-2">Aula Virtual Modsilvina</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sodales lorem porttitor, rhoncus lorem quis, sagittis justo. Mauris odio erat, lobortis in erat non, feugiat tincidunt lacus. Phasellus blandit libero eu efficitur pellentesque. Cras convallis purus et orci rhoncus consectetur. Aliquam at sodales ligula. Curabitur elementum, diam vel volutpat consectetur, nulla dolor mattis magna, in rutrum orci elit eget tellus. Suspendisse lacinia, purus vel luctus sodales, est odio aliquet nibh, at feugiat nulla tortor in arcu. Duis suscipit tempor felis. Curabitur non sem nisl. Sed porta in turpis maximus rutrum. Nunc at odio massa. Donec viverra, mi non consequat varius, sem nunc porttitor sem, id rhoncus orci felis et nisl. 
-                                Curabitur nunc augue, porta id orci non, commodo convallis tellus. Pellentesque mattis ut orci at bibendum. Etiam sit amet massa aliquam, efficitur tellus nec, cursus nunc. Phasellus sed libero vel ligula efficitur auctor. Suspendisse at lorem id leo pharetra venenatis at sit amet velit. Aliquam tempor laoreet quam. Nunc aliquam pretium erat non varius. Aenean vitae nunc id turpis varius pharetra eu quis dui. Vestibulum sodales quam in nunc commodo, vel eleifend mi semper. Morbi tincidunt ligula id euismod ultricies. </p>
-                </div>
-                <!-- fila del login y el aside -->
-                <div class="row">
-                    <!-- columna del login -->
-                    <div class="col s6">
-                        <div class="card-panel white hoverable">
-                            <div class="row">
-                                <div class="col s12">
-                                    <i class="tiny material-icons">account_box</i><h5 class="green-text text-darken-2">Inicia Sesión</h5>
+            <div class="col s12 m6 l3 center-align">
+                <i class="large material-icons yellow-text text-darken-2">settings</i>
+                <h5 class="center-align green-text text-darken-2">Eficiente</h5>
+                <p class="center-align">La eficiencia es uno de los pilares de AVM. El sitio es liviano y está optimizado para dispositivos móviles, de modo que puedas acceder desde cualquier dispositivo.</p>
+            </div>
+
+            <div class="col s12 m6 l3 center-align">
+                <i class="large material-icons yellow-text text-darken-2">whatshot</i>
+                <h5 class="center-align green-text text-darken-2">Novedoso</h5>
+                <p class="center-align">AVM es un proyecto innovador de un grupo de estudiantes de la UPTOS. La plataforma es una herramienta nueva que busca ayudar en la ardua tarea de educar en niveles secundarios. Actualmente, no hay proyectos similares en Sucre, por lo que AVM es pionero en esta materia.</p>
+            </div>
+
+            <div class="col s12 m6 l3 center-align">
+                <i class="large material-icons yellow-text text-darken-2">sentiment_very_satisfied</i>
+                <h5 class="center-align green-text text-darken-2">Fácil de Usar</h5>
+                <p class="center-align">AVM es fácil de usar, su diseño es agradable, responsivoe e interactivo. Nuestra meta es que la utilización de AVM sea sencilla tanto como sea posible.</p>
+            </div>
+        </div>
+
+        <!-- login y aside -->
+        <div class="row">
+            <!-- login -->
+            <div class="col s12 m8 l8">
+                <div class="card hoverable">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator responsive-img" src="./imgs/utiles_logincard.jpg" alt="Útiles Escolares" height="300px">
+                        <span class="card-title green-text text-darken-2">Registrarse <i class="small material-icons right">create</i> </span>
+                    </div>
+                    <div class="card-content">
+                        <h5 class="green-text text-darken-2">Inicia Sesión</h5>
+                        <p>Ingresa tus datos para iniciar sesión en AVM y comienza a aprovechar el material educativo, fácil, sencillo y rápido.</p>
+                        <!-- formulario de inicio de sesión -->
+                        <div class="row">
+                            <form action="#" method="post" name="login" id="login"  class="col s12">
+                                <!-- ingreso de cedula -->
+                                <div class="row">
+                                    <div class="input-field col s6">
+                                        <i class="material-icons prefix yellow-text text-darken-2">account_box</i>
+                                        <input id="cedula" type="text" class="validate">
+                                        <label for="cedulla">Número de Cédula</label>
+                                    </div>
+                                    <!-- ingreso de contraseña -->
+                                    <div class="input-field col s6">
+                                        <i class="material-icons prefix yellow-text text-darken-2">lock</i>
+                                        <input id="contraseña" type="password" class="validate">
+                                        <label for="contraseña">Contraseña</label>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="row">
-                                <form action="#" method="get" name="login" class="col s12">
-                                    <div class="row">
-                                        <div class="input-field col s6">
-                                            <i class="material-icons prefix">account_circle</i>
-                                            <input type="text" id="cedula_login" class="validate">
-                                            <label for="nombre_login">Cédula</label>
-                                        </div>
-                                        <div class="input-field col s6">
-                                            <i class="material-icons prefix">https</i>
-                                            <input type="password" id="login_password" class="validate">
-                                            <label for="login_password">Contraseña</label>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col s4 offset-s2">
-                                            <button class="btn green darken-1" type="submit" name="enviar">Inicia Sesión
+                                <div class="row">
+                                    <!-- submit -->
+                                    <div class="col s6 center-align">
+                                        <button class="btn waves-effect waves-light yellow darken-2" type="submit" name="action">Inicia Sesión
                                                 <i class="material-icons right">send</i>
-                                            </button>
-                                        </div>
-                                        <div class="col s4">
-                                            <a class="waves-effect waves-teal btn-flat green-text text-darken-2">Registrarse</a>
-                                        </div>
+                                        </button>
                                     </div>
-                                </form>
-                            </div>
+                                    <!-- olvido contraseña -->
+                                    <div class="col s6 center-align">
+                                            <a class="waves-effect waves-yellow btn-flat green-text text-darken-2">¿Olvidaste tu contraseña?</a>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
                     </div>
-                    <!-- columna del aside -->
-                    <div class="col s5 offset-s1">
+                    <!-- registro -->
+                    <div class="card-reveal">
+                        <span class="card-title green-text text-darken-2">Registrarse<i class="material-icons right">close</i></span>
+                        <p>Ingresa los datos solicitados para el registro y comienza a usar AVM para aprovechar todas sus herramientas.</p>
                         <div class="row">
-                            <div class="section col s12">
-                                <h6 class="green-text text-darken-2">Acerca de</h6>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sodales lorem porttitor, rhoncus lorem quis, sagittis justo. Mauris odio erat, lobortis in erat non, feugiat tincidunt lacus. Phasellus blandit libero eu efficitur pellentesque. Cras convallis purus et orci rhoncus consectetur. Aliquam at sodales ligula. Curabitur elementum, diam vel volutpat consectetur, nulla dolor mattis magna, in rutrum orci elit eget tellus. Suspendisse lacinia, purus vel luctus sodales, est odio aliquet nibh, at feugiat nulla tortor in arcu. </p>
-                            </div>
-                        </div>
-                        <div class="divider"></div>
-                        <div class="row">
-                                <div class="section col s12">
-                                    <h6 class="green-text text-darken-2">Información</h6>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sodales lorem porttitor, rhoncus lorem quis, sagittis justo. Mauris odio erat, lobortis in erat non, feugiat tincidunt lacus. Phasellus blandit libero eu efficitur pellentesque. Cras convallis purus et orci rhoncus consectetur. Aliquam at sodales ligula. Curabitur elementum, diam vel volutpat consectetur, nulla dolor mattis magna, in rutrum orci elit eget tellus. Suspendisse lacinia, purus vel luctus sodales, est odio aliquet nibh, at feugiat nulla tortor in arcu. </p>
+                            <form action="#" method="post" name="registro" id="registro" class="col s12">
+                                <div class="row">
+                                    <!-- nombre y apellido -->
+                                    <div class="input-field col s6">
+                                        <i class="material-icons prefix yellow-text text-darken-2">person</i>
+                                        <input id="nombre" type="text" class="validate" data-length="10">
+                                        <label for="nombre">Nombre</label>
+                                    </div>
+                                    <div class="input-field col s6">
+                                        <input id="apellido" type="text" class="validate">
+                                        <label for="apellido">Apellido</label>
+                                    </div>
                                 </div>
-                            </div>
+                                <!-- cédula -->
+                                <div class="row">
+                                    <div class="input-field col s6">
+                                        <i class="material-icons prefix yellow-text text-darken-2">payment</i>
+                                        <input id="cedula_registro" type="text" class="validate">
+                                        <label for="cedula_registro">Número de Cédula</label>
+                                    </div>
+                                </div>
+                                <!-- contraseña -->
+                                <div class="row">
+                                    <div class="input-field col s6">
+                                        <i class="material-icons prefix yellow-text text-darken-2">lock</i>
+                                        <input id="contraseña_registro" type="password" class="validate">
+                                        <label for="contraseña_registro">Contraseña</label>
+                                    </div>
+                                </div>
+                                <!-- correo electrónico -->
+                                <div class="row">
+                                    <div class="input-field col s6">
+                                        <i class="material-icons prefix yellow-text text-darken-2">mail</i>
+                                        <input id="correo" type="email" class="validate">
+                                        <label for="correo">Correo Electrónico</label>
+                                    </div>
+                                </div>
+                                <!-- botones -->
+                                <div class="row">
+                                    <!-- submit -->
+                                    <div class="col s6 center-align">
+                                        <button class="btn waves-effect waves-light yellow darken-2" type="submit" name="action">Registrarse
+                                                <i class="material-icons right">send</i>
+                                        </button>
+                                    </div>
+                                    <!-- limpiar -->
+                                    <div class="col s6 center-align">
+                                            <a class="waves-effect waves-yellow btn-flat green-text text-darken-2">Limpiar</a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </main>
 
-    <!-- js aquí para que cargue más rápido -->
+        </div>
+
+    </main>    
+<!-- js aquí para que cargue más rápido -->
     <script type="text/javascript" src="js/jquery-3.3.1.js"> </script>
     <script type="text/javascript" src="js/materialize.js"></script>
 </body>
